@@ -61,7 +61,9 @@ squares.forEach((square, i) => square.addEventListener("click", () => {
     if (winner) {
         console.log(`${winner} wins!`);
         modal.style.display = "flex";
-        winMsg.textContent = `${winner === 'x' ? "player 1" : "player 2"} won the game`
+        console.log(winner);
+
+        winMsg.textContent = `${winner === 'X' ? "player 1" : "player 2"} won the game`
 
 
     } else if (initialBoard.every(cell => cell !== "")) {
